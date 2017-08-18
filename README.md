@@ -2,6 +2,7 @@
 Java call C# lib build with .NET CORE 2.0 via C++ as wraper
 The code is based on [example from coreCLR](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/unixcoreruncommon)
 
+Java using JNI to call C++ code. then C++ host a core CLR to run C# code.
 # pre-require
 JDK: You should edit the Makefile and set the JAVALIB PATH
 
