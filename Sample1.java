@@ -8,7 +8,7 @@ public class Sample1
     public static void main(String[] args)
 {
     //System.loadLibrary("Sample1");
-    System.load("/home/hqy/jtest/CoreCLRHost/tar.so");
+    System.load("./tar.so");
 
     Sample1 sample = new Sample1();
     int square = sample.intMethod(5);
