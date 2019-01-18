@@ -4,9 +4,8 @@ The code is based on [example from coreCLR](https://github.com/dotnet/coreclr/tr
 
 Java using JNI to call C++ code. then C++ host a core CLR to run C# code.
 # pre-require
-JDK: You should edit the Makefile and set the JAVALIB PATH
 
-.NET CORE SDK 2.0: I only tested it in Ubuntu 16.04 x64
+.NET CORE SDK 2.0: I only tested it in Ubuntu 18.04 x64 (Follow https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/sdk-current)
 
 gcc 6: std C++ 14 for the filesystem
 
