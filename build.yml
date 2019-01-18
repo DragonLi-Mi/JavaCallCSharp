@@ -3,8 +3,7 @@ jobs:
 - job: ${{ parameters.name }}
   pool: ${{ parameters.pool }}
 
-steps:
-
+  steps:
   - script: |
       cmake .
       cmake --build .
