@@ -3,11 +3,11 @@
  *  Licensed under the MIT license. See LICENSE file in the project root for full license information.
  */
 
-//#pragma once
+#pragma once
 
-//#if not defined (__unix__) && not defined(__unix) && not defined (unix) && ( (not defined (__APPLE__) || not defined (__MACH__)) )
-//  #error THIS SOFTWARE IS ONLY FOR UNIX-LIKE SYSTEMS!
-//#endif
+#if not defined (__unix__) && not defined(__unix) && not defined (unix) && ( (not defined (__APPLE__) || not defined (__MACH__)) )
+  #error THIS SOFTWARE IS ONLY FOR UNIX-LIKE SYSTEMS!
+#endif
 
 #include <functional>
 #include <iostream>
@@ -25,11 +25,11 @@
   #define PATH_MAX FILENAME_MAX
 #endif
 
-//#if defined(__APPLE__)
-//  std::string coreClrDll = "libcoreclr.dylib";
-//#else
+#if defined(__APPLE__)
+  std::string coreClrDll = "libcoreclr.dylib";
+#else
   std::string coreClrDll = "libcoreclr.so";
-//#endif
+#endif
 
 class myClass {
 private:

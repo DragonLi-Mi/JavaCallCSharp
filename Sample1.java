@@ -8,7 +8,7 @@ public class Sample1
     public static void main(String[] args)
 {
     //System.loadLibrary("Sample1");
-    System.load("./tar.so");
+    System.load(System.getProperty("user.dir") + java.io.File.separator + "libtar.so");
 
     Sample1 sample = new Sample1();
     int square = sample.intMethod(5);
@@ -17,7 +17,7 @@ public class Sample1
     int sum = sample.intArrayMethod(new int[]{1,1,2,3,5,8,13});
 
     int success=0;
-    success= sample.coreClrHost("./Managed.dll");
+    success= sample.coreClrHost("./bin/Debug/netcoreapp2.2/Managed.dll");
     System.out.println("intMethod: "+ square);
     System.out.println("boolMethod: "+ bool);
     System.out.println("stringMethod: "+ text);

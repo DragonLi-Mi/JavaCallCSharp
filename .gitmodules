@@ -1,0 +1,3 @@
+[submodule "dynamicLinker"]
+	path = dynamicLinker
+	url = https://github.com/Marqin/dynamicLinker

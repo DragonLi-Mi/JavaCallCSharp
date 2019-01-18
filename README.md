@@ -11,19 +11,10 @@ JDK: You should edit the Makefile and set the JAVALIB PATH
 gcc 6: std C++ 14 for the filesystem
 
 # usage:
-javac Sample1.java
+cmake .
+cmake --build . 
 
-javah Sample1
-
-make
-
-cd cs
-
-dotnet restore
-
-dotnet build 
-
-java Sample1 
+java -cp sample1.jar Sample1 
 
 
 `You should keep the compiled file in the same fold.`
