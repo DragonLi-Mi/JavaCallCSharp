@@ -11,6 +11,9 @@ JDK: You should edit the Makefile and set the JAVALIB PATH
 gcc 6: std C++ 14 for the filesystem
 
 # usage:
+git submodule init
+git submodule update
+
 cmake .
 cmake --build . 
 
