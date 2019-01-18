@@ -4,6 +4,8 @@ jobs:
   pool: ${{ parameters.pool }}
 
   steps:
+  - checkout: self
+    submodules: true
   - script: |
       cmake .
       cmake --build .
