@@ -9,7 +9,7 @@ jobs:
   parameters:
     name: Linux
     pool:
-      vmImage: 'Ubuntu-18.04'
+      vmImage: 'Ubuntu-16.04'
 
 # - template: build.yml  
   # parameters:
