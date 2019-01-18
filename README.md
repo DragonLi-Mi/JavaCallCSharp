@@ -1,3 +1,6 @@
+[![Build Status](https://dev.azure.com/marcozo0520/JavaCallCSharp/_apis/build/status/eisber.JavaCallCSharp?branchName=master)](https://dev.azure.com/marcozo0520/JavaCallCSharp/_build/latest?definitionId=1?branchName=master)
+
+
 # JavaCallCSharp
 Java call C# lib build with .NET CORE 2.0 via C++ as wraper
 The code is based on [example from coreCLR](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/unixcoreruncommon)
