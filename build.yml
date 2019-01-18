@@ -1,0 +1,12 @@
+jobs:
+
+- job: ${{ parameters.name }}
+  pool: ${{ parameters.pool }}
+
+steps:
+
+  - script: |
+      cmake .
+      cmake --build .
+      java -cp sample1.jar Sample1
+    displayName: 'Build & run'
