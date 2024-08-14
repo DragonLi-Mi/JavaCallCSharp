@@ -51,7 +51,7 @@ int runFromEntryPoint(
     std::cerr << e.what() << std::endl;
     return -1;
   } catch ( dynamicLinker::dynamicLinkerException e ) {
-    std::cerr << e.what() << std::endl;
+    std::cerr << "dynamicLinkerEx: " << e.what() << std::endl;
     return -1;
   }
 
@@ -215,8 +215,8 @@ JNIEXPORT jint JNICALL Java_Sample1_coreClrHost(JNIEnv *env, jobject obj, jstrin
   assemblyDir = cwd + assemblyDir;
 
   int exitCode = runFromEntryPoint(
-                          cwd+std::string("./tar.so"), // absolute path to this exe
-                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.0.0-preview1-002111-00/"),     // absolute path to coreCLR DLLs
+                          cwd, //+std::string("./tar.so"), // absolute path to this exe
+                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.2.1/"),     // absolute path to coreCLR DLLs
                           assemblyDir, // absolute path to DLL to run
                           assemblyName,
                           std::string("Managed"),
