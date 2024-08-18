@@ -37,10 +37,11 @@ sudo apt install cmake
 git submodule init
 git submodule update
 
+dotnet build Managed.csproj
+
 cmake .
 cmake --build . 
 
-dotnet build Managed.csproj
 javac Sample1.java
 java -cp sample1.jar Sample1 
 ```
