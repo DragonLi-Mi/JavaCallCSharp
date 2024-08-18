@@ -1,6 +1,3 @@
-[![Build Status](https://dev.azure.com/marcozo0520/JavaCallCSharp/_apis/build/status/eisber.JavaCallCSharp?branchName=master)](https://dev.azure.com/marcozo0520/JavaCallCSharp/_build/latest?definitionId=1?branchName=master)
-
-
 # JavaCallCSharp
 Java call C# lib build with .NET CORE 2.0 via C++ as wraper
 The code is based on [example from coreCLR](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/unixcoreruncommon)
@@ -13,10 +10,8 @@ Install .NET Core 2.1 SDK (works well if you dont have any dotnet installed, tes
 
 1. Enable Microsoft PPA
 
-```
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb 
 sudo dpkg -i packages-microsoft-prod.deb
-```
 
 2. Installing .NET Core 2.1 SDK
 
