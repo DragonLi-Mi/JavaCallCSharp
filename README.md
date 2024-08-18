@@ -40,6 +40,7 @@ git submodule update
 cmake .
 cmake --build . 
 
+javac Sample1.java
 java -cp sample1.jar Sample1 
 ```
 
