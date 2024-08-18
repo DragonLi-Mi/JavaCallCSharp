@@ -13,8 +13,10 @@ Install .NET Core 2.1 SDK (works well if you dont have any dotnet installed, tes
 
 1. Enable Microsoft PPA
 
+```
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb 
 sudo dpkg -i packages-microsoft-prod.deb
+```
 
 2. Installing .NET Core 2.1 SDK
 
