@@ -17,7 +17,7 @@ public class Sample1
     int sum = sample.intArrayMethod(new int[]{1,1,2,3,5,8,13});
 
     int success=0;
-    success= sample.coreClrHost("./bin/Debug/netcoreapp2.2/Managed.dll");
+    success= sample.coreClrHost("./bin/Debug/netcoreapp2.1/Managed.dll");
     System.out.println("intMethod: "+ square);
     System.out.println("boolMethod: "+ bool);
     System.out.println("stringMethod: "+ text);

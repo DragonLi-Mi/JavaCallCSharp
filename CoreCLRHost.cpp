@@ -216,7 +216,7 @@ JNIEXPORT jint JNICALL Java_Sample1_coreClrHost(JNIEnv *env, jobject obj, jstrin
 
   int exitCode = runFromEntryPoint(
                           cwd, //+std::string("./tar.so"), // absolute path to this exe
-                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.2.1/"),     // absolute path to coreCLR DLLs
+                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.30/"),     // absolute path to coreCLR DLLs
                           assemblyDir, // absolute path to DLL to run
                           assemblyName,
                           std::string("Managed"),
