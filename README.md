@@ -6,6 +6,12 @@ Java using JNI to call C++ code. then C++ host a core CLR to run C# code.
 # pre-require
 
 .NET CORE SDK 2.0: I only tested it in Ubuntu 18.04 x64 (Follow https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/sdk-current)
+
+If you already have recent version of donet need to remove it
+
+```
+sudo apt remove dotnet*
+```
 Install .NET Core 2.1 SDK (works well if you dont have any dotnet installed, tested  Ubuntu 20.04.3 LTS wsl)
 
 1. Enable Microsoft PPA
