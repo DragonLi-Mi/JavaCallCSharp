@@ -37,13 +37,19 @@ sudo apt install apt-transport-https
 sudo apt install dotnet-sdk-2.1 
 ```
 
-gcc 6: std C++ 14 for the filesystem
-Installing build tools
+3. Installing build tools (gcc 6: std C++ 14 for the filesystem)
 
 ```
 sudo apt-get update
 sudo apt-get install build-essential
 sudo apt install cmake
+```
+
+4. Installing Java
+
+```
+sudo apt install default-jre
+sudo apt install default-jdk
 ```
 
 # usage:
