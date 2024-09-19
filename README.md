@@ -3,6 +3,13 @@ Java call C# lib build with .NET CORE 2.0 via C++ as wraper
 The code is based on [example from coreCLR](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/unixcoreruncommon)
 
 Java using JNI to call C++ code. then C++ host a core CLR to run C# code.
+
+```mermaid
+graph LR
+Jaava[Java]  --> B((C++ .cpp))
+B --> C((Core CLR))
+C --> D[.NET core 2.2]
+
 # pre-require
 
 .NET CORE SDK 2.0: I only tested it in Ubuntu 18.04 x64 (Follow https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/sdk-current)
