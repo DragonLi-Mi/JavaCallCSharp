@@ -30,12 +30,12 @@ int runFromEntryPoint(
 
   std::string tpaList;
   AddFilesFromDirectoryToTpaList( clrFilesAbsolutePath, tpaList );
-  std::cout<<"line 32"<<std::endl;
+  //std::cout<<"line 32"<<std::endl;
   auto dl = dynamicLinker::dynamicLinker::make_new( coreClrDllPath );
   auto coreclr_initialize = dl->getFunction<coreclrInitializeFunction>("coreclr_initialize");
   auto coreclr_shutdown = dl->getFunction<coreclrShutdownFunction>("coreclr_shutdown");
   auto coreclr_create_delegate = dl->getFunction<coreclrCreateDelegateFunction>("coreclr_create_delegate");
- std::cout<<"line 37"<<std::endl;
+ //std::cout<<"line 37"<<std::endl;
   try {
     dl->open();
     coreclr_initialize.init();
@@ -176,7 +176,6 @@ JNIEXPORT jint JNICALL Java_Sample1_intMethod
             }
 JNIEXPORT jint JNICALL Java_Sample1_coreClrHost(JNIEnv *env, jobject obj, jstring string)
     {
-  std::cout<<"haha"<<std::endl;
   const char *str = env->GetStringUTFChars(string,0);
   char cap[128];
   strcpy(cap,str);

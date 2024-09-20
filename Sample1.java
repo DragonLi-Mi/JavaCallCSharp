@@ -11,18 +11,8 @@ public class Sample1
     System.load(System.getProperty("user.dir") + java.io.File.separator + "libtar.so");
 
     Sample1 sample = new Sample1();
-    int square = sample.intMethod(5);
-    boolean bool = sample.booleanMethod(true);
-    String text =  sample.stringMethod("JAVA");
-    int sum = sample.intArrayMethod(new int[]{1,1,2,3,5,8,13});
 
-    int success=0;
-    success= sample.coreClrHost("./bin/Debug/netcoreapp2.1/Managed.dll");
-    System.out.println("intMethod: "+ square);
-    System.out.println("boolMethod: "+ bool);
-    System.out.println("stringMethod: "+ text);
-    System.out.println("intArrayMethod: "+ sum);
-    System.out.println("status:"+success);
+    int success= sample.coreClrHost("./bin/Debug/netcoreapp2.1/Managed.dll");
 
 }
 

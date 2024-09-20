@@ -54,7 +54,7 @@ sudo apt install default-jdk
 
 # usage:
 ```
-git submodule init
+git init
 git submodule update
 
 dotnet build Managed.csproj
