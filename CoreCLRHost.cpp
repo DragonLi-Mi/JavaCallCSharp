@@ -30,12 +30,12 @@ int runFromEntryPoint(
 
   std::string tpaList;
   AddFilesFromDirectoryToTpaList( clrFilesAbsolutePath, tpaList );
-  std::cout<<"line 32"<<std::endl;
+  //std::cout<<"line 32"<<std::endl;
   auto dl = dynamicLinker::dynamicLinker::make_new( coreClrDllPath );
   auto coreclr_initialize = dl->getFunction<coreclrInitializeFunction>("coreclr_initialize");
   auto coreclr_shutdown = dl->getFunction<coreclrShutdownFunction>("coreclr_shutdown");
   auto coreclr_create_delegate = dl->getFunction<coreclrCreateDelegateFunction>("coreclr_create_delegate");
- std::cout<<"line 37"<<std::endl;
+ //std::cout<<"line 37"<<std::endl;
   try {
     dl->open();
     coreclr_initialize.init();
@@ -176,7 +176,6 @@ JNIEXPORT jint JNICALL Java_Sample1_intMethod
             }
 JNIEXPORT jint JNICALL Java_Sample1_coreClrHost(JNIEnv *env, jobject obj, jstring string)
     {
-  std::cout<<"haha"<<std::endl;
   const char *str = env->GetStringUTFChars(string,0);
   char cap[128];
   strcpy(cap,str);
@@ -216,7 +215,7 @@ JNIEXPORT jint JNICALL Java_Sample1_coreClrHost(JNIEnv *env, jobject obj, jstrin
 
   int exitCode = runFromEntryPoint(
                           cwd, //+std::string("./tar.so"), // absolute path to this exe
-                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.2.1/"),     // absolute path to coreCLR DLLs
+                          std::string("/usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.30/"),     // absolute path to coreCLR DLLs
                           assemblyDir, // absolute path to DLL to run
                           assemblyName,
                           std::string("Managed"),
